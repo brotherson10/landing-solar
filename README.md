@@ -42,7 +42,7 @@ A página é adaptada para diversos tamanhos de tela:
 
 ## 🌐 Acesse o site publicado
 
-👉 [Clique aqui para visitar a landing page da Sohard Energia Solar](https://brotherson10.github.io/landing-sohard-energiasolar/)
+👉 [Clique aqui para visitar a landing page da Sohard Energia Solar](https://sohard-solar.netlify.app/)
 
 ---
 
