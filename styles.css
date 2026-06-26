@@ -48,7 +48,7 @@ body::before {
         linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
         linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
     background-size: 44px 44px;
-    mask-image: linear-gradient(to bottom, rgba(0,0,0,.8), transparent 80%);
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, .8), transparent 80%);
     z-index: -2;
 }
 
@@ -235,9 +235,11 @@ img {
 
 .hero h1 span,
 .section-heading h2 span {
-    background: linear-gradient(90deg, var(--secondary-light), var(--primary), var(--primary-light));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, var(--secondary-light), var(--primary), var(--primary-light));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -653,20 +655,35 @@ img {
 }
 
 @keyframes slowZoom {
-    from { transform: scale(1); }
-    to { transform: scale(1.08); }
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
 }
 
 @keyframes spin {
-    to { transform: rotate(360deg); }
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 @keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-14px); }
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-14px);
+    }
 }
 
 @media (max-width: 980px) {
+
     .hero-grid,
     .contato-grid {
         grid-template-columns: 1fr;
