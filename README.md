@@ -35,7 +35,7 @@ A página é adaptada para diversos tamanhos de tela:
 
 ## 📸 Prévia
 
-<img width="1366" height="768" alt="image" src="https://github.com/user-attachments/assets/9f3334ce-309e-4117-98ea-a018cf2b9505" />
+<img width="1516" height="782" alt="sohard-energia-solar" src="https://github.com/user-attachments/assets/36df16e1-0763-43bd-ac8f-58a0d3be1d7d" />
 
 
 ---
