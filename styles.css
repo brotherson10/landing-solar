@@ -235,11 +235,11 @@ img {
 
 .hero h1 span,
 .section-heading h2 span {
-  background: linear-gradient(90deg, var(--secondary-light), var(--primary), var(--primary-light));
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-  -webkit-text-fill-color: transparent;
+    background: linear-gradient(90deg, var(--secondary-light), var(--primary), var(--primary-light));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
 }
 
 .hero p {
@@ -460,11 +460,28 @@ img {
     font-size: 1.05rem;
 }
 
-.projetos-grid,
-.servicos-grid {
+.projetos-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+}
+
+.servicos-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 24px;
+}
+
+.servico-card {
+    grid-column: span 2;
+}
+
+.servico-card:nth-child(4) {
+    grid-column: 2 / span 2;
+}
+
+.servico-card:nth-child(5) {
+    grid-column: 4 / span 2;
 }
 
 .projeto-card,
@@ -701,6 +718,12 @@ img {
     .servicos-grid,
     .metrics-grid {
         grid-template-columns: 1fr;
+    }
+
+    .servico-card,
+    .servico-card:nth-child(4),
+    .servico-card:nth-child(5) {
+        grid-column: auto;
     }
 }
 
