@@ -62,7 +62,15 @@
     <link
       rel="preload"
       as="image"
+      href="./img/hero-fundo-instalacao.webp"
+      media="(min-width: 961px)"
+      fetchpriority="high"
+    />
+    <link
+      rel="preload"
+      as="image"
       href="./img/hero-instalacao-residencial.webp"
+      media="(max-width: 960px)"
       fetchpriority="high"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -224,6 +232,17 @@
     <main id="conteudo">
       <!-- HERO -->
       <section id="inicio" class="hero">
+        <picture class="hero-bg">
+          <source media="(max-width: 960px)" srcset="./img/hero-instalacao-residencial.webp" width="840" height="1120" />
+          <img
+            src="./img/hero-fundo-instalacao.webp"
+            alt="Placas solares instaladas pela Sohard no telhado de uma construção em Maceió"
+            width="1440"
+            height="900"
+            fetchpriority="high"
+          />
+        </picture>
+
         <div class="container hero-grid">
           <div class="hero-content">
             <span class="eyebrow eyebrow-light">Energia solar em Maceió e Alagoas</span>
@@ -254,16 +273,6 @@
           </div>
 
           <div class="hero-visual">
-            <div class="hero-sun" aria-hidden="true"></div>
-            <figure class="hero-image">
-              <img
-                src="./img/hero-instalacao-residencial.webp"
-                alt="Placas solares instaladas pela Sohard no telhado de uma residência"
-                width="840"
-                height="1120"
-                fetchpriority="high"
-              />
-            </figure>
             <div class="hero-chip">
               <img src="./img/img-servicos/eco-house.webp" alt="" width="128" height="128" />
               <div>

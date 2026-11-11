@@ -32,6 +32,7 @@ Endereço, WhatsApp e horário têm de ser idênticos no texto, no rodapé, nos 
 | `--red` | `#F42F31` | reservado (hoje só no erro do formulário). O cliente não quis o ponto vermelho nos eyebrows |
 
 - Logo: `img/logo-sohard-vetor.png` (original, 1080 px), `img/logo-sohard.webp` (site), `img/logo-sohard-512.png` (JSON-LD).
+- Hero com a foto da instalação de fundo (`img/hero-fundo-instalacao.webp` no desktop, `img/hero-instalacao-residencial.webp` até 960 px) e degradê índigo: da esquerda para a direita no desktop, de cima para baixo no celular.
 - Base clara, hero, seção do vídeo e contato em índigo, faixa de CTA em amarelo, rodapé claro com o logo solto (sem fundo).
 - Títulos moderados (h1 até 3,25rem, h2 até 2,25rem) com `text-wrap: balance`.
 - Idioma: `pt-BR`. Nunca usar travessão no texto do site.
@@ -65,3 +66,4 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 
 - **2026-11-11:** refatoração visual completa (base clara, paleta do logo, novas seções Benefícios, Como funciona, Dúvidas e formulário para WhatsApp), SEO (title, description, canonical, Open Graph, JSON-LD, robots, sitemap), imagens em WebP e vídeo comprimido (de cerca de 7 MB para 2,6 MB), correção do layout da seção de vídeo no celular.
 - **2026-11-11:** sem ponto vermelho nos eyebrows, h1 e h2 menores, contato em fundo escuro e rodapé claro (troca), logo do rodapé sem caixa.
+- **2026-11-11:** hero com a foto como fundo e degradê, no lugar da foto em moldura.

@@ -309,15 +309,50 @@ h4 {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 72px 0 96px;
+  display: flex;
+  align-items: center;
+  min-height: min(760px, calc(100vh - var(--header-h)));
+  padding: 88px 0 136px;
   color: #fff;
+  background: var(--indigo-950);
+}
+
+/* Foto de fundo: aparece do meio para a direita */
+.hero-bg,
+.hero-bg img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero-bg img {
+  object-fit: cover;
+  object-position: 75% 40%;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 1;
   background:
-    radial-gradient(900px 520px at 88% 8%, rgba(254, 197, 38, 0.22), transparent 60%),
-    radial-gradient(700px 500px at 0% 100%, rgba(66, 62, 149, 0.9), transparent 70%),
-    linear-gradient(160deg, var(--indigo-900) 0%, var(--indigo-950) 100%);
+    linear-gradient(0deg, rgba(18, 16, 47, 0.6) 0%, transparent 28%),
+    linear-gradient(
+      90deg,
+      var(--indigo-950) 0%,
+      rgba(18, 16, 47, 0.96) 32%,
+      rgba(18, 16, 47, 0.78) 46%,
+      rgba(18, 16, 47, 0.32) 64%,
+      rgba(18, 16, 47, 0.06) 82%,
+      rgba(18, 16, 47, 0) 100%
+    );
 }
 
 .hero-grid {
+  position: relative;
+  z-index: 2;
+  width: min(1180px, calc(100% - 40px));
   display: grid;
   grid-template-columns: 1.08fr 0.92fr;
   gap: 56px;
@@ -384,46 +419,12 @@ h4 {
 }
 
 .hero-visual {
-  position: relative;
+  align-self: end;
   display: grid;
   justify-items: end;
 }
 
-.hero-sun {
-  position: absolute;
-  top: -40px;
-  right: -60px;
-  width: 260px;
-  height: 260px;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle, var(--sun-light) 0 34%, transparent 35%),
-    repeating-conic-gradient(from 0deg, rgba(254, 197, 38, 0.5) 0 6deg, transparent 6deg 20deg);
-  mask: radial-gradient(circle, #000 0 64%, transparent 65%);
-  -webkit-mask: radial-gradient(circle, #000 0 64%, transparent 65%);
-  opacity: 0.9;
-}
-
-.hero-image {
-  position: relative;
-  width: min(100%, 470px);
-  aspect-ratio: 4 / 5;
-  border-radius: var(--radius-lg);
-  overflow: hidden;
-  border: 6px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 30px 80px rgba(0, 0, 0, 0.4);
-}
-
-.hero-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
 .hero-chip {
-  position: absolute;
-  left: 0;
-  bottom: 36px;
   display: flex;
   align-items: center;
   gap: 12px;
@@ -1317,7 +1318,30 @@ h4 {
   }
 
   .hero {
-    padding: 48px 0 96px;
+    min-height: 0;
+    padding: 48px 0 112px;
+  }
+
+  .hero-bg {
+    top: auto;
+    bottom: 0;
+    height: 600px;
+  }
+
+  .hero-bg img {
+    object-position: center 22%;
+  }
+
+  .hero::before {
+    background: linear-gradient(
+      180deg,
+      var(--indigo-950) 0%,
+      var(--indigo-950) 45%,
+      rgba(18, 16, 47, 0.7) 58%,
+      rgba(18, 16, 47, 0.2) 74%,
+      rgba(18, 16, 47, 0.05) 88%,
+      rgba(18, 16, 47, 0.35) 100%
+    );
   }
 
   .hero-grid,
@@ -1328,30 +1352,12 @@ h4 {
   }
 
   .hero-grid {
-    gap: 48px;
+    gap: 0;
   }
 
   .hero-visual {
-    justify-items: center;
-  }
-
-  .hero-image {
-    width: min(100%, 520px);
-    aspect-ratio: 5 / 4;
-  }
-
-  .hero-chip {
-    left: 50%;
-    bottom: -24px;
-    transform: translateX(-50%);
-    width: max-content;
-    max-width: calc(100% - 24px);
-  }
-
-  .hero-sun {
-    width: 200px;
-    height: 200px;
-    right: -40px;
+    justify-items: start;
+    padding-top: 220px;
   }
 
   .section {
@@ -1459,19 +1465,11 @@ h4 {
     flex: 1 1 100%;
   }
 
-  .hero-image {
-    aspect-ratio: 4 / 4.2;
-  }
-
   .hero-chip {
     padding: 10px 14px 10px 10px;
   }
 
   .hero-chip span {
-    display: none;
-  }
-
-  .hero-sun {
     display: none;
   }
 
