@@ -32,7 +32,7 @@ Endereço, WhatsApp e horário têm de ser idênticos no texto, no rodapé, nos 
 | `--red` | `#F42F31` | reservado (hoje só no erro do formulário). O cliente não quis o ponto vermelho nos eyebrows |
 
 - Logo: `img/logo-sohard-vetor.png` (original, 1080 px), `img/logo-sohard.webp` (site), `img/logo-sohard-512.png` (JSON-LD).
-- Hero com vídeo de fundo (`img/hero-video-usina.mp4`, 25 s, sem áudio, em loop, poster `img/hero-video-poster.webp`): dois vídeos de drone de usinas da Sohard unidos com transição de 0,8 s (originais `video-home-curto.MOV` e `video-instalacao.MOV`, fora do git). Com `prefers-reduced-motion` fica parado no poster. As fotos antigas do hero (`hero-fundo-instalacao.webp`, `hero-fundo-mobile.webp`) continuam em `img/` para voltar se precisar. Hero na altura cheia (até 760 px), só com eyebrow, h1, texto e botões e degradê índigo: da esquerda para a direita no desktop, de cima para baixo no celular.
+- Hero com vídeo de fundo (`img/hero-video-usina.mp4`, 19,4 s, 1280×728, 3,3 MB, sem áudio, em loop, poster `img/hero-video-poster.webp`): dois vídeos de drone de usinas da Sohard unidos com transição de 0,8 s (originais `video-home-curto.MOV` e `video-instalacao-reduz.mp4`, versão cortada do `video-instalacao.MOV`, todos fora do git). Os originais têm só 816×464 e a Sohard não tem versão maior: o vídeo foi ampliado com ffmpeg (hqdn3d, lanczos e unsharp leve). Com `prefers-reduced-motion` fica parado no poster. As fotos antigas do hero (`hero-fundo-instalacao.webp`, `hero-fundo-mobile.webp`) continuam em `img/` para voltar se precisar. Hero na altura cheia (até 760 px), só com eyebrow, h1, texto e botões e degradê índigo: da esquerda para a direita no desktop, de cima para baixo no celular.
 - O servidor local do Python não aceita Range: avançar o vídeo no navegador não funciona localmente, só no Netlify.
 - Base clara, hero, seção do vídeo e contato em índigo, faixa de CTA em amarelo, rodapé claro com o logo solto (sem fundo).
 - Títulos moderados (h1 até 3,25rem, h2 até 2,25rem) com `text-wrap: balance`.
@@ -61,7 +61,6 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 - [ ] Ficha do Google Maps: trocar o telefone fixo (82) 3223-7040 pelo WhatsApp, adicionar o site, categorias, serviços, descrição, horário e fotos
 - [ ] Ficha do Maps tem nota 2,7 com 3 avaliações antigas. Pedir avaliações para clientes recentes
 - [ ] Números de confiança (anos de mercado, quantidade de instalações), se a Sohard tiver, para uma faixa de prova social
-- [ ] Vídeos do hero estão em 816×464 (ficam um pouco borrados em tela grande). Pedir à Sohard os originais do drone em Full HD
 - [ ] Mais fotos reais de obras (a foto de equipe com colete do site antigo parecia banco de imagem e saiu)
 - [x] Search Console verificado, `sitemap.xml` processado e home indexada (11/11/2026)
 
@@ -75,3 +74,4 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 - **2026-11-11:** hero voltou à altura cheia com a foto do instalador (recorte sem o topo); no celular a foto foi enquadrada para o instalador aparecer.
 - **2026-11-11:** publicado (push). Depois: h1 de volta a 3,25rem e recorte do hero mostrando mais a parte de cima (rua e casas). Como funciona, FAQ e fotos validados pela Sohard.
 - **2026-11-11:** hero trocou a foto por vídeo de fundo (dois vídeos de drone de usinas em sequência, com transição). Search Console verificado e ficha do Google Maps reivindicada.
+- **2026-11-11:** vídeo do hero refeito com o segundo trecho cortado (19,4 s) e ampliado para 1280 px com filtros de nitidez. A Sohard não tem os vídeos em resolução maior.
