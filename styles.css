@@ -90,6 +90,7 @@ h4 {
   line-height: 1.15;
   letter-spacing: -0.02em;
   font-weight: 800;
+  text-wrap: balance;
 }
 
 :focus-visible {
@@ -189,24 +190,13 @@ h4 {
 /* ---------- Eyebrow ---------- */
 
 .eyebrow {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  margin-bottom: 16px;
+  display: inline-block;
+  margin-bottom: 14px;
   color: var(--indigo);
   font-size: 0.8rem;
   font-weight: 800;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-}
-
-.eyebrow::before {
-  content: "";
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--red);
-  box-shadow: 0 0 0 4px rgba(244, 47, 49, 0.14);
 }
 
 .eyebrow-light {
@@ -336,10 +326,10 @@ h4 {
 
 .hero h1 {
   color: #fff;
-  font-size: clamp(2.4rem, 5.2vw, 4.1rem);
-  line-height: 1.06;
-  letter-spacing: -0.035em;
-  margin-bottom: 22px;
+  font-size: clamp(2.05rem, 4.1vw, 3.25rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+  margin-bottom: 20px;
 }
 
 .hero h1 span {
@@ -546,9 +536,10 @@ h4 {
 }
 
 .section-heading h2 {
-  font-size: clamp(2rem, 3.6vw, 2.9rem);
-  letter-spacing: -0.03em;
-  margin-bottom: 14px;
+  font-size: clamp(1.65rem, 2.7vw, 2.25rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 12px;
 }
 
 .section-heading p {
@@ -698,8 +689,9 @@ h4 {
 }
 
 .instalacao-content h2 {
-  font-size: clamp(2rem, 3.4vw, 2.7rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.65rem, 2.7vw, 2.25rem);
+  line-height: 1.2;
+  letter-spacing: -0.02em;
   margin-bottom: 16px;
 }
 
@@ -851,8 +843,9 @@ h4 {
 
 .cta-band h2 {
   color: var(--indigo-950);
-  font-size: clamp(1.6rem, 3vw, 2.2rem);
-  letter-spacing: -0.03em;
+  font-size: clamp(1.4rem, 2.3vw, 1.8rem);
+  line-height: 1.25;
+  letter-spacing: -0.02em;
   margin-bottom: 6px;
 }
 
@@ -1104,10 +1097,31 @@ h4 {
 
 /* ---------- Rodapé ---------- */
 
+/* Contato em fundo escuro (trocado com o rodapé) */
+
+.section-contato {
+  background:
+    radial-gradient(700px 400px at 0% 0%, rgba(254, 197, 38, 0.12), transparent 60%),
+    var(--indigo-950);
+}
+
+.section-contato .section-heading h2 {
+  color: #fff;
+}
+
+.section-contato .section-heading p {
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.section-contato .form-card,
+.section-contato .contato-info-card {
+  border-color: transparent;
+}
+
 .footer {
   padding: 72px 0 0;
-  background: var(--indigo-950);
-  color: rgba(255, 255, 255, 0.7);
+  background: var(--bg-soft);
+  color: var(--muted);
   font-size: 0.95rem;
 }
 
@@ -1119,18 +1133,13 @@ h4 {
 }
 
 .footer-logo {
-  display: inline-grid;
-  place-items: center;
-  width: 84px;
-  height: 84px;
-  margin-bottom: 18px;
-  border-radius: 22px;
-  background: #fff;
+  display: block;
+  margin-bottom: 14px;
 }
 
 .footer-logo img {
-  width: 68px;
-  height: 68px;
+  width: 112px;
+  height: 112px;
 }
 
 .footer-brand p {
@@ -1139,7 +1148,7 @@ h4 {
 
 .footer h4 {
   margin-bottom: 16px;
-  color: #fff;
+  color: var(--ink);
   font-size: 0.95rem;
   letter-spacing: 0.02em;
 }
@@ -1150,12 +1159,12 @@ h4 {
 }
 
 .footer a:hover {
-  color: var(--sun);
+  color: var(--indigo);
 }
 
 .footer-bottom {
   padding: 22px 0;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  border-top: 1px solid var(--line);
   font-size: 0.86rem;
 }
 
@@ -1439,7 +1448,7 @@ h4 {
   }
 
   .hero h1 {
-    font-size: clamp(2.1rem, 9.6vw, 2.7rem);
+    font-size: clamp(1.8rem, 8.2vw, 2.25rem);
   }
 
   .hero-lead {
