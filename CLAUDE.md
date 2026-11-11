@@ -68,3 +68,4 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 - **2026-11-11:** sem ponto vermelho nos eyebrows, h1 e h2 menores, contato em fundo escuro e rodapé claro (troca), logo do rodapé sem caixa.
 - **2026-11-11:** hero com a foto como fundo e degradê, no lugar da foto em moldura.
 - **2026-11-11:** hero mais baixo com recorte focado nas placas, h1 menor, sem o cartão e sem a linha de localização e horário.
+- **2026-11-11:** troca de fotos: o hero passou a usar a foto do instalador nas placas (original `projeto-residencial-grande.jpg`) e o card "Residência na Barra Nova" passou a usar a foto do telhado com a construção branca (original `projeto-residencial-menor.jpg`). Confirmar com a Sohard se as duas fotos são da obra da Barra Nova.
