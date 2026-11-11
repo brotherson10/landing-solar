@@ -60,7 +60,7 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 - [ ] Ficha do Maps tem nota 2,7 com 3 avaliações antigas. Pedir avaliações para clientes recentes
 - [ ] Números de confiança (anos de mercado, quantidade de instalações), se a Sohard tiver, para uma faixa de prova social
 - [ ] Mais fotos reais de obras (a foto de equipe com colete do site antigo parecia banco de imagem e saiu)
-- [ ] Cadastrar o domínio no Google Search Console e enviar o `sitemap.xml`
+- [ ] Search Console: tag de verificação já no `<head>`. Falta clicar em Verificar e enviar o `sitemap.xml`
 
 ## Histórico
 
