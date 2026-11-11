@@ -311,8 +311,8 @@ h4 {
   overflow: hidden;
   display: flex;
   align-items: center;
-  min-height: min(760px, calc(100vh - var(--header-h)));
-  padding: 88px 0 136px;
+  min-height: min(560px, calc(100vh - var(--header-h)));
+  padding: 64px 0 112px;
   color: #fff;
   background: var(--indigo-950);
 }
@@ -328,7 +328,7 @@ h4 {
 
 .hero-bg img {
   object-fit: cover;
-  object-position: 75% 40%;
+  object-position: 70% 55%;
 }
 
 .hero::before {
@@ -354,15 +354,13 @@ h4 {
   z-index: 2;
   width: min(1180px, calc(100% - 40px));
   display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 56px;
-  align-items: center;
+  grid-template-columns: minmax(0, 620px);
 }
 
 .hero h1 {
   color: #fff;
-  font-size: clamp(2.05rem, 4.1vw, 3.25rem);
-  line-height: 1.12;
+  font-size: clamp(1.85rem, 3.4vw, 2.7rem);
+  line-height: 1.14;
   letter-spacing: -0.025em;
   margin-bottom: 20px;
 }
@@ -382,25 +380,9 @@ h4 {
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-bottom: 40px;
 }
 
-.hero-facts {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px 28px;
-  padding-top: 26px;
-  border-top: 1px solid rgba(255, 255, 255, 0.14);
-}
 
-.hero-facts li {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  color: rgba(255, 255, 255, 0.86);
-  font-weight: 600;
-  font-size: 0.96rem;
-}
 
 .icon-stroke {
   fill: none !important;
@@ -410,51 +392,11 @@ h4 {
   stroke-linejoin: round;
 }
 
-.hero-facts svg {
-  color: var(--sun);
-  width: 20px;
-  height: 20px;
-  fill: var(--sun);
-  flex-shrink: 0;
-}
 
-.hero-visual {
-  align-self: end;
-  display: grid;
-  justify-items: end;
-}
 
-.hero-chip {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  max-width: 340px;
-  padding: 14px 18px 14px 14px;
-  border-radius: var(--radius);
-  background: #fff;
-  box-shadow: var(--shadow-lg);
-}
 
-.hero-chip img {
-  width: 44px;
-  height: 44px;
-  padding: 8px;
-  border-radius: 12px;
-  background: var(--sun-soft);
-  flex-shrink: 0;
-}
 
-.hero-chip strong {
-  display: block;
-  color: var(--ink);
-  font-size: 0.92rem;
-  line-height: 1.25;
-}
 
-.hero-chip span {
-  color: var(--muted);
-  font-size: 0.82rem;
-}
 
 /* ---------- Benefícios ---------- */
 
@@ -1319,28 +1261,27 @@ h4 {
 
   .hero {
     min-height: 0;
-    padding: 48px 0 112px;
+    padding: 48px 0 230px;
   }
 
   .hero-bg {
     top: auto;
     bottom: 0;
-    height: 600px;
+    height: 420px;
   }
 
   .hero-bg img {
-    object-position: center 22%;
+    object-position: center 60%;
   }
 
   .hero::before {
     background: linear-gradient(
       180deg,
       var(--indigo-950) 0%,
-      var(--indigo-950) 45%,
-      rgba(18, 16, 47, 0.7) 58%,
-      rgba(18, 16, 47, 0.2) 74%,
-      rgba(18, 16, 47, 0.05) 88%,
-      rgba(18, 16, 47, 0.35) 100%
+      var(--indigo-950) 52%,
+      rgba(18, 16, 47, 0.65) 66%,
+      rgba(18, 16, 47, 0.15) 82%,
+      rgba(18, 16, 47, 0.3) 100%
     );
   }
 
@@ -1355,10 +1296,6 @@ h4 {
     gap: 0;
   }
 
-  .hero-visual {
-    justify-items: start;
-    padding-top: 220px;
-  }
 
   .section {
     padding: 80px 0;
@@ -1454,7 +1391,7 @@ h4 {
   }
 
   .hero h1 {
-    font-size: clamp(1.8rem, 8.2vw, 2.25rem);
+    font-size: clamp(1.6rem, 7.2vw, 1.95rem);
   }
 
   .hero-lead {
@@ -1465,13 +1402,7 @@ h4 {
     flex: 1 1 100%;
   }
 
-  .hero-chip {
-    padding: 10px 14px 10px 10px;
-  }
 
-  .hero-chip span {
-    display: none;
-  }
 
   .beneficios-grid {
     grid-template-columns: 1fr;
