@@ -311,8 +311,8 @@ h4 {
   overflow: hidden;
   display: flex;
   align-items: center;
-  min-height: min(560px, calc(100vh - var(--header-h)));
-  padding: 64px 0 112px;
+  min-height: min(760px, calc(100vh - var(--header-h)));
+  padding: 88px 0 136px;
   color: #fff;
   background: var(--indigo-950);
 }
@@ -328,7 +328,7 @@ h4 {
 
 .hero-bg img {
   object-fit: cover;
-  object-position: 70% 55%;
+  object-position: 60% 45%;
 }
 
 .hero::before {
@@ -1261,17 +1261,17 @@ h4 {
 
   .hero {
     min-height: 0;
-    padding: 48px 0 230px;
+    padding: 48px 0 290px;
   }
 
   .hero-bg {
     top: auto;
     bottom: 0;
-    height: 420px;
+    height: 480px;
   }
 
   .hero-bg img {
-    object-position: center 60%;
+    object-position: 82% 50%;
   }
 
   .hero::before {
