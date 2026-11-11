@@ -32,7 +32,8 @@ Endereço, WhatsApp e horário têm de ser idênticos no texto, no rodapé, nos 
 | `--red` | `#F42F31` | reservado (hoje só no erro do formulário). O cliente não quis o ponto vermelho nos eyebrows |
 
 - Logo: `img/logo-sohard-vetor.png` (original, 1080 px), `img/logo-sohard.webp` (site), `img/logo-sohard-512.png` (JSON-LD).
-- Hero com a foto da instalação de fundo (recorte focado nas placas: `img/hero-fundo-instalacao.webp` no desktop, `img/hero-fundo-mobile.webp` até 960 px). Hero na altura cheia (até 760 px), só com eyebrow, h1, texto e botões e degradê índigo: da esquerda para a direita no desktop, de cima para baixo no celular.
+- Hero com vídeo de fundo (`img/hero-video-usina.mp4`, 25 s, sem áudio, em loop, poster `img/hero-video-poster.webp`): dois vídeos de drone de usinas da Sohard unidos com transição de 0,8 s (originais `video-home-curto.MOV` e `video-instalacao.MOV`, fora do git). Com `prefers-reduced-motion` fica parado no poster. As fotos antigas do hero (`hero-fundo-instalacao.webp`, `hero-fundo-mobile.webp`) continuam em `img/` para voltar se precisar. Hero na altura cheia (até 760 px), só com eyebrow, h1, texto e botões e degradê índigo: da esquerda para a direita no desktop, de cima para baixo no celular.
+- O servidor local do Python não aceita Range: avançar o vídeo no navegador não funciona localmente, só no Netlify.
 - Base clara, hero, seção do vídeo e contato em índigo, faixa de CTA em amarelo, rodapé claro com o logo solto (sem fundo).
 - Títulos moderados (h1 até 3,25rem, h2 até 2,25rem) com `text-wrap: balance`.
 - Idioma: `pt-BR`. Nunca usar travessão no texto do site.
@@ -56,11 +57,13 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 
 - [x] Texto da seção "Como funciona" validado pela Sohard
 - [x] Respostas do FAQ validadas pela Sohard
-- [ ] Ficha do Google Maps: não foi reivindicada pela empresa, mostra o telefone fixo (82) 3223-7040 em vez do WhatsApp e não tem site. Reivindicar, trocar o telefone, adicionar o site e fotos
+- [x] Ficha do Google Maps reivindicada (acesso liberado em 11/11/2026)
+- [ ] Ficha do Google Maps: trocar o telefone fixo (82) 3223-7040 pelo WhatsApp, adicionar o site, categorias, serviços, descrição, horário e fotos
 - [ ] Ficha do Maps tem nota 2,7 com 3 avaliações antigas. Pedir avaliações para clientes recentes
 - [ ] Números de confiança (anos de mercado, quantidade de instalações), se a Sohard tiver, para uma faixa de prova social
+- [ ] Vídeos do hero estão em 816×464 (ficam um pouco borrados em tela grande). Pedir à Sohard os originais do drone em Full HD
 - [ ] Mais fotos reais de obras (a foto de equipe com colete do site antigo parecia banco de imagem e saiu)
-- [ ] Search Console: tag de verificação já no `<head>`. Falta clicar em Verificar e enviar o `sitemap.xml`
+- [x] Search Console verificado, `sitemap.xml` processado e home indexada (11/11/2026)
 
 ## Histórico
 
@@ -71,3 +74,4 @@ Os números (kWh/mês e R$/ano) são médias estimadas a partir dos dados de cad
 - **2026-11-11:** troca de fotos: o hero passou a usar a foto do instalador nas placas (original `projeto-residencial-grande.jpg`) e o card "Residência na Barra Nova" passou a usar a foto do telhado com a construção branca (original `projeto-residencial-menor.jpg`). Fotos validadas pela Sohard.
 - **2026-11-11:** hero voltou à altura cheia com a foto do instalador (recorte sem o topo); no celular a foto foi enquadrada para o instalador aparecer.
 - **2026-11-11:** publicado (push). Depois: h1 de volta a 3,25rem e recorte do hero mostrando mais a parte de cima (rua e casas). Como funciona, FAQ e fotos validados pela Sohard.
+- **2026-11-11:** hero trocou a foto por vídeo de fundo (dois vídeos de drone de usinas em sequência, com transição). Search Console verificado e ficha do Google Maps reivindicada.

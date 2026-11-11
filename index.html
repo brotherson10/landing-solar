@@ -63,15 +63,7 @@
     <link
       rel="preload"
       as="image"
-      href="./img/hero-fundo-instalacao.webp"
-      media="(min-width: 961px)"
-      fetchpriority="high"
-    />
-    <link
-      rel="preload"
-      as="image"
-      href="./img/hero-fundo-mobile.webp"
-      media="(max-width: 960px)"
+      href="./img/hero-video-poster.webp"
       fetchpriority="high"
     />
     <link rel="stylesheet" href="styles.css" />
@@ -233,16 +225,20 @@
     <main id="conteudo">
       <!-- HERO -->
       <section id="inicio" class="hero">
-        <picture class="hero-bg">
-          <source media="(max-width: 960px)" srcset="./img/hero-fundo-mobile.webp" width="1000" height="626" />
-          <img
-            src="./img/hero-fundo-instalacao.webp"
-            alt="Instalador da Sohard montando placas solares no telhado de uma residência"
-            width="1440"
-            height="1080"
-            fetchpriority="high"
-          />
-        </picture>
+        <video
+          class="hero-bg"
+          autoplay
+          muted
+          loop
+          playsinline
+          preload="auto"
+          poster="./img/hero-video-poster.webp"
+          width="816"
+          height="464"
+          aria-hidden="true"
+        >
+          <source src="./img/hero-video-usina.mp4" type="video/mp4" />
+        </video>
 
         <div class="container hero-grid">
           <div class="hero-content">

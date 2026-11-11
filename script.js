@@ -50,6 +50,13 @@ document.addEventListener('DOMContentLoaded', () => {
     elementos.forEach((el) => el.classList.add('animado'));
   }
 
+  /* Vídeo do hero: fica parado no poster se a pessoa pediu menos movimento */
+  const heroVideo = document.querySelector('.hero-bg');
+  if (heroVideo && reduzMovimento) {
+    heroVideo.removeAttribute('autoplay');
+    heroVideo.pause();
+  }
+
   /* Vídeo: só carrega e toca quando aparece na tela */
   const video = document.querySelector('.instalacao-video video');
   if (video) {
