@@ -1,347 +1,757 @@
 <!doctype html>
-<html lang="pt-br">
+<html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sohard Energia Solar</title>
+
+    <title>Energia Solar em Maceió e Alagoas | Sohard Energia Solar</title>
+    <meta
+      name="description"
+      content="Energia solar residencial, empresarial e rural em Maceió e no interior de Alagoas. Projeto, instalação, limpeza de placas e carregadores para carros elétricos."
+    />
+    <link rel="canonical" href="https://sohard-energiasolar.com.br/" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#423E95" />
+
+    <!-- Open Graph -->
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Sohard Energia Solar" />
+    <meta
+      property="og:title"
+      content="Sohard Energia Solar | Energia solar em Maceió e Alagoas"
+    />
+    <meta
+      property="og:description"
+      content="Projeto e instalação de energia solar para casas, empresas e propriedades rurais. Peça seu orçamento pelo WhatsApp."
+    />
+    <meta property="og:url" content="https://sohard-energiasolar.com.br/" />
+    <meta
+      property="og:image"
+      content="https://sohard-energiasolar.com.br/img/og-sohard.jpg"
+    />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Placas solares instaladas pela Sohard Energia Solar em Maceió"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta
+      name="twitter:title"
+      content="Sohard Energia Solar | Energia solar em Maceió e Alagoas"
+    />
+    <meta
+      name="twitter:description"
+      content="Projeto e instalação de energia solar para casas, empresas e propriedades rurais. Peça seu orçamento pelo WhatsApp."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sohard-energiasolar.com.br/img/og-sohard.jpg"
+    />
+
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicon-48.png" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="./img/hero-instalacao-residencial.webp"
+      fetchpriority="high"
+    />
     <link rel="stylesheet" href="styles.css" />
+    <script>document.documentElement.classList.add("js");</script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "@id": "https://sohard-energiasolar.com.br/#empresa",
+        "name": "Sohard Energia Solar",
+        "description": "Projeto, instalação, limpeza e manutenção de sistemas de energia solar residenciais, empresariais e rurais, usinas solares de investimento e carregadores para veículos elétricos em Maceió e no interior de Alagoas.",
+        "url": "https://sohard-energiasolar.com.br/",
+        "logo": "https://sohard-energiasolar.com.br/img/logo-sohard-512.png",
+        "image": "https://sohard-energiasolar.com.br/img/og-sohard.jpg",
+        "telephone": "+55-82-99647-1444",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rua Comendador Firmo Lopes, 41, Farol",
+          "addressLocality": "Maceió",
+          "addressRegion": "AL",
+          "postalCode": "57050-030",
+          "addressCountry": "BR"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": -9.6478135,
+          "longitude": -35.7331948
+        },
+        "hasMap": "https://maps.google.com/?cid=3675984637933943429",
+        "openingHoursSpecification": [
+          {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+            "opens": "08:00",
+            "closes": "17:00"
+          }
+        ],
+        "areaServed": [
+          { "@type": "City", "name": "Maceió" },
+          { "@type": "State", "name": "Alagoas" }
+        ],
+        "sameAs": ["https://www.instagram.com/sohard_energiasolar"],
+        "knowsAbout": [
+          "Energia solar residencial",
+          "Energia solar empresarial",
+          "Energia solar rural",
+          "Usinas solares de investimento",
+          "Limpeza e manutenção de placas solares",
+          "Carregadores para veículos elétricos"
+        ]
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Energia solar funciona em dia nublado?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Funciona, mas gera menos. As placas aproveitam a luz do dia mesmo com nuvens, e o sistema é dimensionado pela média de geração do ano inteiro, não por um dia só."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Vou deixar de pagar a conta de luz?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Não totalmente. Quem está ligado à rede continua pagando a taxa mínima e alguns encargos da distribuidora, mas a maior parte do consumo passa a ser coberta pela energia que o seu sistema gera."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "E se eu gerar mais energia do que consumo?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A energia que sobra vai para a rede e vira crédito na sua conta, que pode ser usado nos meses em que você gerar menos."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Quanto tempo leva a instalação?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Depende do tamanho do sistema e do tipo de telhado ou terreno. Na visita técnica a Sohard passa o prazo certo para o seu caso."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "As placas solares precisam de manutenção?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pouca. Basicamente limpeza periódica das placas e uma revisão do sistema para manter a geração em dia. A Sohard também faz esse serviço."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "A Sohard atende fora de Maceió?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sim. A Sohard atende Maceió e o interior de Alagoas, como a usina solar instalada em uma fazenda em Maribondo."
+            }
+          }
+        ]
+      }
+    </script>
   </head>
 
   <body>
-    <div class="page-glow"></div>
+    <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
     <header class="header" id="header">
       <div class="container nav-container">
-        <a href="#inicio" class="brand" aria-label="Sohard Energia Solar">
+        <a href="#inicio" class="brand" aria-label="Sohard Energia Solar, voltar ao início">
           <img
-            src="./img/logo-sohard-vetor.png"
-            alt="logo sohard"
+            src="./img/logo-sohard.webp"
+            alt="Sohard Energia Solar"
             class="logo-img"
+            width="168"
+            height="168"
           />
         </a>
 
-        <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">
+        <nav class="nav" id="nav" aria-label="Menu principal">
+          <ul class="nav-list" id="nav-list">
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+            <li><a href="#contato">Contato</a></li>
+          </ul>
+        </nav>
+
+        <a
+          href="https://wa.me/5582996471444?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20energia%20solar."
+          class="btn btn-primary btn-sm header-cta"
+          target="_blank"
+          rel="noopener"
+          >Pedir orçamento</a
+        >
+
+        <button
+          class="menu-toggle"
+          id="menu-toggle"
+          aria-label="Abrir menu"
+          aria-expanded="false"
+          aria-controls="nav-list"
+        >
           <span></span>
           <span></span>
           <span></span>
         </button>
-
-        <nav class="nav" id="nav">
-          <ul class="nav-list">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#servicos">Serviços</a></li>
-            <li><a href="#contato">Contato</a></li>
-          </ul>
-        </nav>
       </div>
     </header>
 
-    <main>
-      <section id="inicio" class="hero" data-anima="fade-up">
+    <main id="conteudo">
+      <!-- HERO -->
+      <section id="inicio" class="hero">
         <div class="container hero-grid">
           <div class="hero-content">
-            <span class="eyebrow"
-              >Sustentabilidade • Conforto • Economia • Tecnologia</span
-            >
-            <h1>Energia Solar para um <span>Futuro Sustentável</span></h1>
-            <p>
-              Economize na conta de luz e desfrute do conforto de usar seus
-              eletrodomesticos sem preocupações. Contribua para o meio ambiente
-              com nossos sistemas de energia solar.
+            <span class="eyebrow eyebrow-light">Energia solar em Maceió e Alagoas</span>
+            <h1>
+              Energia solar para gastar <span>menos com a conta de luz</span>
+            </h1>
+            <p class="hero-lead">
+              Economize na conta de luz e use seus eletrodomésticos sem
+              preocupação. A Sohard projeta e instala sistemas de energia solar
+              para casas, empresas e propriedades rurais.
             </p>
 
             <div class="hero-actions">
-              <a href="#contato" class="btn btn-primary"
-                >Solicite seu Orçamento</a
-              >
-              <a href="#projetos" class="btn btn-ghost">Ver projetos</a>
+              <a href="#contato" class="btn btn-primary">Solicite seu orçamento</a>
+              <a href="#projetos" class="btn btn-outline-light">Ver projetos</a>
             </div>
+
+            <ul class="hero-facts">
+              <li>
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg>
+                Maceió e interior de Alagoas
+              </li>
+              <li>
+                <svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
+                Seg a sex, das 8h às 17h
+              </li>
+            </ul>
           </div>
 
-          <div
-            class="hero-visual"
-            aria-label="Instalação de energia solar residencial"
-          >
-            <div class="orbit orbit-one"></div>
-            <div class="orbit orbit-two"></div>
-            <div class="energy-card float-card top-card">
-              <strong>Solar</strong>
-              <span>Energia inteligente</span>
-            </div>
-            <div class="hero-image">
+          <div class="hero-visual">
+            <div class="hero-sun" aria-hidden="true"></div>
+            <figure class="hero-image">
               <img
-                src="./img/instalacao-energia-solar-residencial-1.jpg"
-                alt="image instalacao"
+                src="./img/hero-instalacao-residencial.webp"
+                alt="Placas solares instaladas pela Sohard no telhado de uma residência"
+                width="840"
+                height="1120"
+                fetchpriority="high"
               />
-            </div>
-            <div class="energy-card float-card bottom-card">
-              <strong>Economia</strong>
-              <span>Conta de luz reduzida</span>
+            </figure>
+            <div class="hero-chip">
+              <img src="./img/img-servicos/eco-house.webp" alt="" width="128" height="128" />
+              <div>
+                <strong>Residencial, empresarial e rural</strong>
+                <span>Projeto sob medida para cada cliente</span>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      <section id="servicos" class="servicos section" data-anima="fade-up">
+      <!-- BENEFÍCIOS -->
+      <section class="beneficios" aria-label="Benefícios da energia solar">
+        <div class="container beneficios-grid">
+          <div class="beneficio" data-anima>
+            <span class="beneficio-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 17h18v2H3zM5 10h3v6H5zm5.5-4h3v10h-3zM16 3h3v13h-3z"/></svg>
+            </span>
+            <div>
+              <h3>Conta de luz menor</h3>
+              <p>A energia gerada no seu telhado reduz o que você paga todo mês.</p>
+            </div>
+          </div>
+          <div class="beneficio" data-anima>
+            <span class="beneficio-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 12h3v8h6v-6h2v6h6v-8h3Z"/></svg>
+            </span>
+            <div>
+              <h3>Imóvel mais valorizado</h3>
+              <p>Um sistema solar instalado agrega valor à sua casa ou ao seu negócio.</p>
+            </div>
+          </div>
+          <div class="beneficio" data-anima>
+            <span class="beneficio-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 21.34l1.89.66.95-2.3c.48.17.98.3 1.34.3C19 20 22 3 22 3c-1 2-8 2.25-13 3.25S2 11.5 2 13.5s1.75 3.75 1.75 3.75C7 8 17 8 17 8Z"/></svg>
+            </span>
+            <div>
+              <h3>Energia limpa</h3>
+              <p>Você gera a própria energia e contribui com o meio ambiente.</p>
+            </div>
+          </div>
+          <div class="beneficio" data-anima>
+            <span class="beneficio-icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2v11h3v9l7-12h-4l4-8Z"/></svg>
+            </span>
+            <div>
+              <h3>Mais conforto</h3>
+              <p>Use ar-condicionado e eletrodomésticos sem medo da próxima fatura.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SERVIÇOS -->
+      <section id="servicos" class="section section-soft">
         <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Soluções</span>
-            <h2>Nossos Serviços</h2>
+          <div class="section-heading" data-anima>
+            <span class="eyebrow">Serviços</span>
+            <h2>Soluções completas em energia solar</h2>
             <p>
-              Oferecemos soluções completas em energia solar para todos os tipos
-              de necessidade.
+              Do projeto à manutenção, a Sohard cuida do sistema de energia
+              solar certo para cada tipo de necessidade.
             </p>
           </div>
 
           <div class="servicos-grid">
-            <article class="servico-card">
+            <article class="servico-card" data-anima>
               <div class="icon-wrap">
-                <img
-                  src="./img/img-servicos/eco-house.png"
-                  alt="instalacao residencial"
-                />
+                <img src="./img/img-servicos/eco-house.webp" alt="" width="128" height="128" loading="lazy" />
               </div>
               <h3>Residencial</h3>
-              <p>
-                Economize na sua conta de luz e aumente a valorização do seu
-                imóvel
-              </p>
+              <p>Economize na sua conta de luz e aumente a valorização do seu imóvel.</p>
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card" data-anima>
               <div class="icon-wrap">
-                <img
-                  src="./img/img-servicos/solar-energy.png"
-                  alt="instalacao empresarial"
-                />
+                <img src="./img/img-servicos/solar-energy.webp" alt="" width="128" height="128" loading="lazy" />
               </div>
               <h3>Empresarial</h3>
-              <p>
-                Melhore a eficiência energética do seu negócio, seja ele grande
-                ou pequeno
-              </p>
+              <p>Melhore a eficiência energética do seu negócio, seja ele grande ou pequeno.</p>
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card" data-anima>
               <div class="icon-wrap">
-                <img
-                  src="./img/img-servicos/solar-panel.png"
-                  alt="instalacao Rural"
-                />
+                <img src="./img/img-servicos/solar-panel.webp" alt="" width="128" height="128" loading="lazy" />
               </div>
               <h3>Rural</h3>
-              <p>Melhoria na qualidade de energia trazendo benefícios</p>
+              <p>Mais qualidade de energia para a sua propriedade, com economia no dia a dia da produção.</p>
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card" data-anima>
               <div class="icon-wrap">
-                <img
-                  src="./img/img-servicos/solar-panel-invest.png"
-                  alt="instalacao Usinas de Investimento"
-                />
+                <img src="./img/img-servicos/solar-panel-invest.webp" alt="" width="128" height="128" loading="lazy" />
               </div>
-              <h3>Usinas de Investimento</h3>
+              <h3>Usinas de investimento</h3>
               <p>
-                Gere renda investindo em Usinas Solares de Investimento. Toda a
-                instalação e gestão sob medida para a melhor rentabilidade.
+                Gere renda investindo em usinas solares. Toda a instalação e a
+                gestão são feitas sob medida para a melhor rentabilidade.
               </p>
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card" data-anima>
               <div class="icon-wrap">
-                <img
-                  src="./img/img-servicos/painel-manutencao.png"
-                  alt="Limpeza e manutenção de sistemas de energia solar"
-                />
+                <img src="./img/img-servicos/painel-manutencao.webp" alt="" width="128" height="128" loading="lazy" />
               </div>
-              <h3>Limpeza e Manutenção</h3>
+              <h3>Limpeza e manutenção</h3>
               <p>
-                Oferecemos serviços de limpeza e manutenção de sistemas de
-                energia solar para garantir o máximo desempenho, conforto e
-                economia.
+                Limpeza e manutenção de sistemas de energia solar para garantir
+                o máximo desempenho, conforto e economia.
               </p>
             </article>
 
-            <article class="servico-card">
+            <article class="servico-card" data-anima>
               <div class="icon-wrap">
-                <img
-                  src="./img/img-servicos/eco-ve.png"
-                  alt="instalacao empresarial"
-                />
+                <img src="./img/img-servicos/eco-ve.webp" alt="" width="128" height="128" loading="lazy" />
               </div>
-              <h3>Carregadores para Veículos Elétricos</h3>
-              <p>
-                Instale carregadores para veículos elétricos em sua residência
-                ou empresa.
-              </p>
+              <h3>Carregadores para veículos elétricos</h3>
+              <p>Instale um carregador para carro elétrico na sua casa ou na sua empresa.</p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section instalacao-section" id="instalacao">
+      <!-- COMO FUNCIONA -->
+      <!-- PENDENTE: etapas escritas a partir do processo padrão do mercado. Validar com a Sohard. -->
+      <section id="como-funciona" class="section">
+        <div class="container">
+          <div class="section-heading" data-anima>
+            <span class="eyebrow">Como funciona</span>
+            <h2>Do primeiro contato à energia gerando</h2>
+            <p>Um caminho simples, com a Sohard acompanhando cada etapa.</p>
+          </div>
+
+          <ol class="passos">
+            <li class="passo" data-anima>
+              <span class="passo-num">1</span>
+              <h3>Conversa e conta de luz</h3>
+              <p>Você manda uma foto da sua conta de luz pelo WhatsApp e a gente entende o seu consumo.</p>
+            </li>
+            <li class="passo" data-anima>
+              <span class="passo-num">2</span>
+              <h3>Visita técnica</h3>
+              <p>Avaliamos o telhado ou o terreno para definir o melhor lugar para as placas.</p>
+            </li>
+            <li class="passo" data-anima>
+              <span class="passo-num">3</span>
+              <h3>Projeto e proposta</h3>
+              <p>O sistema é dimensionado sob medida e você recebe a proposta com a economia estimada.</p>
+            </li>
+            <li class="passo" data-anima>
+              <span class="passo-num">4</span>
+              <h3>Instalação</h3>
+              <p>A equipe instala placas, inversor e toda a parte elétrica com segurança.</p>
+            </li>
+            <li class="passo" data-anima>
+              <span class="passo-num">5</span>
+              <h3>Homologação</h3>
+              <p>Cuidamos da documentação com a Equatorial Alagoas até o sistema começar a gerar.</p>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <!-- VÍDEO -->
+      <section class="section section-dark" id="instalacao">
         <div class="container instalacao-grid">
           <div class="instalacao-video" data-anima>
-            <video autoplay muted loop playsinline>
-              <source src="./img/video-inst-paineis.mp4" type="video/mp4" />
-              Seu navegador não suporta vídeo.
+            <video
+              muted
+              loop
+              playsinline
+              preload="none"
+              poster="./img/video-instalacao-poster.webp"
+              width="848"
+              height="478"
+              aria-label="Vídeo de uma usina solar instalada pela Sohard"
+            >
+              <source src="./img/video-instalacao-usina.mp4" type="video/mp4" />
             </video>
           </div>
 
           <div class="instalacao-content" data-anima>
-            <span class="eyebrow">Instalação concluída</span>
-
-            <h2>Veja uma instalação solar</h2>
-
+            <span class="eyebrow eyebrow-light">Instalação concluída</span>
+            <h2>Veja uma instalação Sohard</h2>
             <p>
               A Sohard Energia Solar realiza instalações com segurança,
               qualidade e atenção em cada detalhe, garantindo eficiência
               energética para residências, empresas e propriedades rurais.
             </p>
 
-            <ul class="instalacao-lista">
+            <ul class="check-list">
               <li>Equipe especializada</li>
               <li>Projeto personalizado para cada cliente</li>
               <li>Equipamentos de qualidade</li>
               <li>Mais economia e sustentabilidade</li>
             </ul>
 
-            <a href="#contato" class="btn btn-primary"> Solicitar orçamento </a>
+            <a href="#contato" class="btn btn-primary">Solicitar orçamento</a>
           </div>
         </div>
       </section>
 
-      <section id="projetos" class="projetos section" data-anima="fade-up">
+      <!-- PROJETOS -->
+      <section id="projetos" class="section section-soft">
         <div class="container">
-          <div class="section-heading">
-            <span class="eyebrow">Portfólio</span>
-            <h2>Nossos Projetos</h2>
-            <p>
-              Conheça algumas instalações realizadas com nossos sistemas de
-              energia solar.
-            </p>
+          <div class="section-heading" data-anima>
+            <span class="eyebrow">Projetos</span>
+            <h2>Instalações feitas pela Sohard em Alagoas</h2>
+            <p>Alguns sistemas de energia solar que já estão gerando economia para nossos clientes.</p>
           </div>
 
           <div class="projetos-grid">
-            <article class="projeto-card">
+            <article class="projeto-card" data-anima>
               <div class="card-image">
                 <img
-                  src="./img/projeto-residencial-grande.jpg"
-                  alt="instalacao residencial"
+                  src="./img/projeto-residencial-barra-nova.webp"
+                  alt="Placas solares em telhado residencial na Barra Nova"
+                  width="800"
+                  height="1066"
+                  loading="lazy"
                 />
-              </div>
-              <div class="card-content">
                 <span class="tag">Residencial</span>
-                <h3>Instalação na Barra Nova</h3>
-                <p>
-                  Projeto com geração média mensal de 1500kWh na Barra Nova e
-                  economia anual de R$18.000,00.
-                </p>
+              </div>
+              <div class="card-content">
+                <h3>Residência na Barra Nova</h3>
+                <dl class="projeto-dados">
+                  <div><dt>Geração média</dt><dd>1.500 kWh/mês</dd></div>
+                  <div><dt>Economia estimada</dt><dd>R$ 18 mil/ano</dd></div>
+                </dl>
               </div>
             </article>
 
-            <article class="projeto-card">
+            <article class="projeto-card" data-anima>
               <div class="card-image">
                 <img
-                  src="./img/projeto-comercial.jpg"
-                  alt="instalacao comercial"
+                  src="./img/projeto-comercial-graciliano-ramos.webp"
+                  alt="Placas solares no telhado de um galpão no Graciliano Ramos"
+                  width="800"
+                  height="950"
+                  loading="lazy"
                 />
-              </div>
-              <div class="card-content">
                 <span class="tag">Comercial</span>
-                <h3>Instalação no Graciliano Ramos</h3>
-                <p>
-                  Projeto com geração média mensal de 6000kWh em galpão no
-                  Graciliano Ramos e economia anual de R$72.000,00.
-                </p>
-              </div>
-            </article>
-
-            <article class="projeto-card">
-              <div class="card-image">
-                <img src="./img/projeto-rural.jpg" alt="instalacao rural" />
               </div>
               <div class="card-content">
-                <span class="tag">Rural / Investimento</span>
-                <h3>Instalação em Maribondo</h3>
-                <p>
-                  Projeto de Usina Solar de Investimento com geração média
-                  mensal de 8000kWh em fazenda na cidade de Maribondo e geração
-                  de renda média anual de R$95.000,00.
-                </p>
+                <h3>Galpão no Graciliano Ramos</h3>
+                <dl class="projeto-dados">
+                  <div><dt>Geração média</dt><dd>6.000 kWh/mês</dd></div>
+                  <div><dt>Economia estimada</dt><dd>R$ 72 mil/ano</dd></div>
+                </dl>
               </div>
             </article>
 
-            <article class="projeto-card">
+            <article class="projeto-card" data-anima>
               <div class="card-image">
                 <img
-                  src="./img/inst-ev-inv.jpg"
-                  alt="instalação Carregadores para Veículos Elétricos"
+                  src="./img/projeto-usina-maribondo.webp"
+                  alt="Usina solar de investimento em fazenda em Maribondo"
+                  width="800"
+                  height="1066"
+                  loading="lazy"
                 />
+                <span class="tag">Rural e investimento</span>
               </div>
               <div class="card-content">
-                <span class="tag">Carregadores para Veículos Elétricos</span>
-                <h3>Instalação de carregadores para veículos elétricos</h3>
-                <p>
-                  Fazemos a instalação de carregadores para veículos elétricos
-                  de todas as marcas e em toda Alagoas.
-                </p>
+                <h3>Usina de investimento em Maribondo</h3>
+                <dl class="projeto-dados">
+                  <div><dt>Geração média</dt><dd>8.000 kWh/mês</dd></div>
+                  <div><dt>Renda estimada</dt><dd>R$ 95 mil/ano</dd></div>
+                </dl>
               </div>
             </article>
+
+            <article class="projeto-card" data-anima>
+              <div class="card-image">
+                <img
+                  src="./img/projeto-carregador-veiculo-eletrico.webp"
+                  alt="Carregador para veículo elétrico instalado na parede pela Sohard"
+                  width="800"
+                  height="1066"
+                  loading="lazy"
+                />
+                <span class="tag">Veículos elétricos</span>
+              </div>
+              <div class="card-content">
+                <h3>Carregadores para veículos elétricos</h3>
+                <p>Instalação de carregadores de todas as marcas, em qualquer cidade de Alagoas.</p>
+              </div>
+            </article>
+          </div>
+
+          <p class="nota">Valores médios estimados a partir dos dados de cada cliente.</p>
+        </div>
+      </section>
+
+      <!-- CTA -->
+      <section class="cta-band">
+        <div class="container cta-grid" data-anima>
+          <div>
+            <h2>Quer saber quanto você pode economizar?</h2>
+            <p>Manda uma foto da sua conta de luz pelo WhatsApp que a gente faz a análise para você.</p>
+          </div>
+          <a
+            href="https://wa.me/5582996471444?text=Ol%C3%A1%2C%20quero%20saber%20quanto%20posso%20economizar%20com%20energia%20solar.%20Vou%20mandar%20minha%20conta%20de%20luz."
+            class="btn btn-dark"
+            target="_blank"
+            rel="noopener"
+            >Enviar minha conta de luz</a
+          >
+        </div>
+      </section>
+
+      <!-- DÚVIDAS -->
+      <!-- PENDENTE: respostas escritas a partir de informação geral do setor. Validar com a Sohard. -->
+      <section id="duvidas" class="section">
+        <div class="container faq-grid">
+          <div class="section-heading section-heading-left" data-anima>
+            <span class="eyebrow">Dúvidas</span>
+            <h2>Perguntas frequentes sobre energia solar</h2>
+            <p>Não achou a sua dúvida? Chama a gente no WhatsApp que a gente explica.</p>
+          </div>
+
+          <div class="faq-list" data-anima>
+            <details>
+              <summary>Energia solar funciona em dia nublado?</summary>
+              <p>Funciona, mas gera menos. As placas aproveitam a luz do dia mesmo com nuvens, e o sistema é dimensionado pela média de geração do ano inteiro, não por um dia só.</p>
+            </details>
+            <details>
+              <summary>Vou deixar de pagar a conta de luz?</summary>
+              <p>Não totalmente. Quem está ligado à rede continua pagando a taxa mínima e alguns encargos da distribuidora, mas a maior parte do consumo passa a ser coberta pela energia que o seu sistema gera.</p>
+            </details>
+            <details>
+              <summary>E se eu gerar mais energia do que consumo?</summary>
+              <p>A energia que sobra vai para a rede e vira crédito na sua conta, que pode ser usado nos meses em que você gerar menos.</p>
+            </details>
+            <details>
+              <summary>Quanto tempo leva a instalação?</summary>
+              <p>Depende do tamanho do sistema e do tipo de telhado ou terreno. Na visita técnica a Sohard passa o prazo certo para o seu caso.</p>
+            </details>
+            <details>
+              <summary>As placas solares precisam de manutenção?</summary>
+              <p>Pouca. Basicamente limpeza periódica das placas e uma revisão do sistema para manter a geração em dia. A Sohard também faz esse serviço.</p>
+            </details>
+            <details>
+              <summary>A Sohard atende fora de Maceió?</summary>
+              <p>Sim. A Sohard atende Maceió e o interior de Alagoas, como a usina solar instalada em uma fazenda em Maribondo.</p>
+            </details>
           </div>
         </div>
       </section>
 
-      <section id="contato" class="contato section" data-anima="fade-up">
-        <div class="container contato-grid">
-          <div class="contact-copy">
-            <span class="eyebrow">Atendimento</span>
-            <h2>Fale conosco</h2>
-            <p>
-              Entre em contato para tirar dúvidas ou solicitar um orçamento.
-            </p>
+      <!-- CONTATO -->
+      <section id="contato" class="section section-soft">
+        <div class="container">
+          <div class="section-heading" data-anima>
+            <span class="eyebrow">Contato</span>
+            <h2>Fale com a Sohard</h2>
+            <p>Tire suas dúvidas ou peça um orçamento sem compromisso.</p>
+          </div>
 
-            <ul class="contato-info">
-              <li>
-                <span>📞</span>
-                <strong
-                  ><a href="https://wa.me/5582996471444" target="_blank"
-                    >82 99647-1444</a
-                  ></strong
-                >
-              </li>
-              <li>
-                <span>📷</span>
-                <strong
-                  ><a
-                    href="https://www.instagram.com/sohard_energiasolar"
-                    target="_blank"
-                    >@sohard_energiasolar</a
-                  ></strong
-                >
-              </li>
-              <li>
-                <span>📍</span>
-                <strong
-                  ><a
-                    href="https://www.google.com/maps?q=Rua+Comendador+Firmo+Lopes,+41,+Farol,+Maceió-AL"
-                    target="_blank"
-                    >Rua Comendador Firmo Lopes, 41, Farol, Maceió-AL</a
-                  ></strong
-                >
-              </li>
-            </ul>
+          <div class="contato-grid">
+            <form class="form-card" id="form-orcamento" data-anima novalidate>
+              <h3>Peça seu orçamento</h3>
+              <p class="form-hint">Preencha e o WhatsApp abre com a sua mensagem pronta.</p>
+
+              <div class="form-group">
+                <label for="nome">Seu nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" required />
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="cidade">Cidade</label>
+                  <input id="cidade" name="cidade" type="text" autocomplete="address-level2" placeholder="Ex.: Maceió" required />
+                </div>
+                <div class="form-group">
+                  <label for="conta">Conta de luz média <span>(opcional)</span></label>
+                  <input id="conta" name="conta" type="text" inputmode="numeric" placeholder="Ex.: R$ 450" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="tipo">O que você precisa?</label>
+                <select id="tipo" name="tipo">
+                  <option>Energia solar residencial</option>
+                  <option>Energia solar empresarial</option>
+                  <option>Energia solar rural</option>
+                  <option>Usina de investimento</option>
+                  <option>Limpeza e manutenção</option>
+                  <option>Carregador para veículo elétrico</option>
+                </select>
+              </div>
+
+              <p class="form-erro" id="form-erro" role="alert" hidden>Preencha seu nome e sua cidade para continuar.</p>
+
+              <button type="submit" class="btn btn-primary btn-block">Enviar pelo WhatsApp</button>
+              <p class="form-rodape">Atendimento de segunda a sexta, das 8h às 17h.</p>
+            </form>
+
+            <div class="contato-info-card" data-anima>
+              <ul class="contato-info">
+                <li>
+                  <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 15.5c-1.25 0-2.45-.2-3.57-.57a1 1 0 0 0-1.02.24l-2.2 2.2a15.05 15.05 0 0 1-6.59-6.59l2.2-2.21a.96.96 0 0 0 .25-1A11.36 11.36 0 0 1 8.5 4a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1 17 17 0 0 0 17 17 1 1 0 0 0 1-1v-3.5a1 1 0 0 0-1-1Z"/></svg></span>
+                  <div>
+                    <small>WhatsApp</small>
+                    <a href="https://wa.me/5582996471444" target="_blank" rel="noopener">(82) 99647-1444</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7Zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5Z"/></svg></span>
+                  <div>
+                    <small>Endereço</small>
+                    <a href="https://maps.google.com/?cid=3675984637933943429" target="_blank" rel="noopener">Rua Comendador Firmo Lopes, 41, Farol, Maceió - AL, 57050-030</a>
+                  </div>
+                </li>
+                <li>
+                  <span class="ci-icon"><svg class="icon-stroke" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg></span>
+                  <div>
+                    <small>Horário</small>
+                    <span>Segunda a sexta, das 8h às 17h</span>
+                  </div>
+                </li>
+                <li>
+                  <span class="ci-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.8 2h8.4A5.8 5.8 0 0 1 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8A5.8 5.8 0 0 1 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2Zm-.2 2A3.6 3.6 0 0 0 4 7.6v8.8A3.6 3.6 0 0 0 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6A3.6 3.6 0 0 0 16.4 4H7.6Zm9.65 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5ZM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10Zm0 2a3 3 0 1 0 0 6 3 3 0 0 0 0-6Z"/></svg></span>
+                  <div>
+                    <small>Instagram</small>
+                    <a href="https://www.instagram.com/sohard_energiasolar" target="_blank" rel="noopener">@sohard_energiasolar</a>
+                  </div>
+                </li>
+              </ul>
+
+              <div class="mapa">
+                <iframe
+                  title="Mapa com a localização da Sohard Energia Solar no Farol, em Maceió"
+                  src="https://www.google.com/maps?q=Sohard+Energia+Solar,+Rua+Comendador+Firmo+Lopes,+41,+Farol,+Macei%C3%B3+-+AL,+57050-030&output=embed"
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
       </section>
     </main>
 
     <footer class="footer">
-      <div class="container">
-        <p>&copy; 2026 Sohard Energia Solar. Todos os direitos reservados.</p>
+      <div class="container footer-grid">
+        <div class="footer-brand">
+          <span class="footer-logo">
+            <img src="./img/logo-sohard.webp" alt="Sohard Energia Solar" width="168" height="168" loading="lazy" />
+          </span>
+          <p>Projeto, instalação e manutenção de energia solar em Maceió e no interior de Alagoas.</p>
+        </div>
+
+        <div>
+          <h4>Navegação</h4>
+          <ul>
+            <li><a href="#servicos">Serviços</a></li>
+            <li><a href="#como-funciona">Como funciona</a></li>
+            <li><a href="#projetos">Projetos</a></li>
+            <li><a href="#duvidas">Dúvidas</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Contato</h4>
+          <ul>
+            <li><a href="https://wa.me/5582996471444" target="_blank" rel="noopener">WhatsApp (82) 99647-1444</a></li>
+            <li><a href="https://maps.google.com/?cid=3675984637933943429" target="_blank" rel="noopener">Rua Comendador Firmo Lopes, 41, Farol, Maceió - AL, 57050-030</a></li>
+            <li>Segunda a sexta, das 8h às 17h</li>
+            <li><a href="https://www.instagram.com/sohard_energiasolar" target="_blank" rel="noopener">@sohard_energiasolar</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>&copy; <span id="ano">2026</span> Sohard Energia Solar. Todos os direitos reservados.</p>
       </div>
     </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/5582996471444?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20quero%20um%20or%C3%A7amento%20de%20energia%20solar."
+      target="_blank"
+      rel="noopener"
+      aria-label="Falar com a Sohard pelo WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.66 15l-1.3 4.76 4.88-1.28A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-2.9.76.78-2.83-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.14c-.25-.12-1.46-.72-1.69-.8-.23-.08-.39-.12-.55.12-.16.25-.63.8-.78.97-.14.16-.29.18-.53.06a6.7 6.7 0 0 1-3.32-2.9c-.25-.43.25-.4.72-1.33.08-.16.04-.3-.02-.42l-.75-1.82c-.2-.48-.4-.41-.55-.42h-.47a.9.9 0 0 0-.65.3 2.74 2.74 0 0 0-.86 2.04 4.76 4.76 0 0 0 1 2.53 10.9 10.9 0 0 0 4.17 3.68c1.55.67 2.16.73 2.93.61.47-.07 1.46-.6 1.66-1.17.2-.58.2-1.07.15-1.17-.06-.1-.22-.16-.47-.28Z"/></svg>
+      <span>WhatsApp</span>
+    </a>
 
     <script src="script.js"></script>
   </body>

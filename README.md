@@ -18,7 +18,7 @@ Este projeto é uma landing page desenvolvida para a empresa **Sohard Energia So
 - Menu de navegação responsivo com botão toggle
 - Animações suaves ao rolar a página (scroll reveal)
 - Seções informativas: Início, Projetos, Serviços, Contato
-- Formulário de contato funcionalmente estilizado
+- Formulário de orçamento que abre o WhatsApp com a mensagem pronta
 - Design moderno e responsivo para dispositivos móveis e desktop
 
 ---
@@ -42,7 +42,7 @@ A página é adaptada para diversos tamanhos de tela:
 
 ## 🌐 Acesse o site publicado
 
-👉 [Clique aqui para visitar a landing page da Sohard Energia Solar](https://sohard-solar.netlify.app/)
+👉 [sohard-energiasolar.com.br](https://sohard-energiasolar.com.br/)
 
 ---
 
@@ -51,8 +51,8 @@ A página é adaptada para diversos tamanhos de tela:
 - Criar um layout moderno e responsivo
 - Praticar animações com JavaScript
 - Estruturar um menu mobile funcional
-- Publicar o projeto com GitHub Pages
-- Simular um projeto real para portfólio
+- Publicar o projeto no Netlify com domínio próprio
+- Aparecer nas buscas locais (SEO, Open Graph e dados estruturados)
 
 ---
 
